@@ -3,9 +3,9 @@
   tasks:
   - name: create S3 bucket
     s3_bucket:
-      name: ${params.BUCKET_NAME}
-      aws_access_key: xxxxxxx
-      aws_secret_key: xxxxxxx
+      name: ${params.txlatestbucket}
+      aws_access_key: AKIAZOGSWYVYDPXSZ2WI
+      aws_secret_key: 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
       policy: "{{ lookup( 'file','my_bucket_policy.json' )}}"
       state: present
       region: ${params.AWS_REGION}
