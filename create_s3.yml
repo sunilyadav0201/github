@@ -4,8 +4,8 @@
   - name: create S3 bucket
     s3_bucket:
       name: ${params.txlatestbucket}
-      aws_access_key: AKIAZOGSWYVYDPXSZ2WI
-      aws_secret_key: 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
+      aws_access_key: AKIAZOGSWYVYPJWUYV76
+      aws_secret_key: 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
       policy: "{{ lookup( 'file','my_bucket_policy.json' )}}"
       state: present
       region: ${params.ap-south-1}
