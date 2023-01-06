@@ -8,6 +8,6 @@
       aws_secret_key: QYPHJ9X8TjXDsDilibHHC6FgHIEPr+oXFPu7ZGNh
       policy: "{{ lookup( 'file','my_bucket_policy.json' )}}"
       state: present
-      region: ${params.AWS_REGION}
+      region: ${params.ap-south-1}
       versioning: no
       
